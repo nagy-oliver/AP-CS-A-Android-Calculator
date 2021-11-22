@@ -7,4 +7,5 @@
     <string name="random_number_generator">Random Number Generator</string>
     <string name="calculate">Calculate</string>
     <string name="quadratic_equation_calculator">Quadratic equation calculator</string>
+    <string name="extreme_school_calculator">Extreme School Calculator</string>
 </resources>
