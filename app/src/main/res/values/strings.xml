@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AP-CS-AGrasp</string>
+    <string name="quadratic_equations">Quadratic Equations</string>
+    <string name="daily_nutrition">Daily Nutrition</string>
+    <string name="study_hours">Study Hours</string>
+    <string name="base_conversion">Base Conversion</string>
+    <string name="random_number_generator">Random Number Generator</string>
 </resources>
