@@ -9,6 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.APCSAGrasp">
+        <activity
+            android:name=".BaseConversion"
+            android:exported="false" />
+        <activity
+            android:name=".SleepingCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".StudyHours"
+            android:exported="false" />
+        <activity
+            android:name=".Nutrition"
+            android:exported="false" />
+        <activity
+            android:name=".QuadraticEquation"
+            android:exported="false" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
