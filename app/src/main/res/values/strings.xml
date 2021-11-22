@@ -8,4 +8,8 @@
     <string name="calculate">Calculate</string>
     <string name="quadratic_equation_calculator">Quadratic equation calculator</string>
     <string name="extreme_school_calculator">Extreme School Calculator</string>
+    <string name="ax_2_bx_c_0">Ax^2 + Bx + C = 0</string>
+    <string name="a">A:</string>
+    <string name="b">B:</string>
+    <string name="c">C:</string>
 </resources>

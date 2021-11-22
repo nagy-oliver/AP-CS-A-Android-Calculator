@@ -35,7 +35,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="             Ax^2 + Bx + C = 0"
+                android:text="@string/ax_2_bx_c_0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="14sp" />
 
@@ -49,7 +49,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="A: " />
+                    android:text="@string/a" />
 
                 <EditText
                     android:id="@+id/editTextNumberDecimal"
@@ -69,7 +69,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="B: " />
+                    android:text="@string/b" />
 
                 <EditText
                     android:id="@+id/editTextNumberDecimal2"
@@ -89,7 +89,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="C: " />
+                    android:text="@string/c" />
 
                 <EditText
                     android:id="@+id/editTextNumberDecimal3"
