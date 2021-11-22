@@ -1,0 +1,2 @@
+rootProject.name = "AP-CS-AGrasp"
+include ':app'
