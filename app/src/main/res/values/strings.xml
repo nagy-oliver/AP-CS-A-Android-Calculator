@@ -5,4 +5,6 @@
     <string name="study_hours">Study Hours</string>
     <string name="base_conversion">Base Conversion</string>
     <string name="random_number_generator">Random Number Generator</string>
+    <string name="calculate">Calculate</string>
+    <string name="quadratic_equation_calculator">Quadratic equation calculator</string>
 </resources>
