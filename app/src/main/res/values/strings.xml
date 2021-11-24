@@ -12,4 +12,5 @@
     <string name="a">A:</string>
     <string name="b">B:</string>
     <string name="c">C:</string>
+    <string name="ideal_caloric_income_based_on_weight">Ideal caloric income based on weight</string>
 </resources>
