@@ -18,7 +18,11 @@ public class QuadraticEquation extends AppCompatActivity {
         EditText ctext = findViewById(R.id.editTextNumberDecimal3);
         TextView result = findViewById(R.id.resultQuadra);
 
-        //TODO: Define custom exception for
+        class RootsIrrationalException extends Exception {
+            public RootsIrrationalException(String errorMessage) {
+                super(errorMessage);
+            }
+        }
 
         findViewById(R.id.buttonSubmitQuadra).setOnClickListener(view -> {
             try {
@@ -29,9 +33,12 @@ public class QuadraticEquation extends AppCompatActivity {
                 double disc = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
                 double positive = (-b + disc) / (2 * a);
                 double negative = (-b - disc) / (2 * a);
+                if (Double.isNaN(positive) && Double.isNaN(negative)) throw new RootsIrrationalException("Both roots are imaginary");
                 result.setText(String.format("x = { %f , %f }", positive, negative));
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException x) {
                 result.setText("Please fill correct values");
+            } catch (RootsIrrationalException x) {
+                result.setText(x.getMessage());
             }
         });
     }
