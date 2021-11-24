@@ -13,10 +13,10 @@ public class QuadraticEquation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quadratic_equation);
 
-        EditText atext = findViewById(R.id.editTextNumberDecimal);
-        EditText btext = findViewById(R.id.editTextNumberDecimal2);
+        EditText atext = findViewById(R.id.editTextNumberDecimalTerm);
+        EditText btext = findViewById(R.id.editTextNumberDecimalYear);
         EditText ctext = findViewById(R.id.editTextNumberDecimal3);
-        TextView result = findViewById(R.id.resultQuadra);
+        TextView result = findViewById(R.id.resultStudy);
 
         class RootsIrrationalException extends Exception {
             public RootsIrrationalException(String errorMessage) {
@@ -24,7 +24,7 @@ public class QuadraticEquation extends AppCompatActivity {
             }
         }
 
-        findViewById(R.id.buttonSubmitQuadra).setOnClickListener(view -> {
+        findViewById(R.id.buttonSubmitStudy).setOnClickListener(view -> {
             try {
                 double a = Double.parseDouble((!atext.getText().toString().equals("") ? atext.getText().toString() : "0"));
                 double b = Double.parseDouble((!btext.getText().toString().equals("") ? btext.getText().toString() : "0"));

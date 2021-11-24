@@ -27,6 +27,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/quadratic_equation_calculator"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="24sp" />
@@ -35,6 +36,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/ax_2_bx_c_0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="14sp" />
@@ -52,7 +54,7 @@
                     android:text="@string/a" />
 
                 <EditText
-                    android:id="@+id/editTextNumberDecimal"
+                    android:id="@+id/editTextNumberDecimalTerm"
                     android:layout_width="302dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -72,7 +74,7 @@
                     android:text="@string/b" />
 
                 <EditText
-                    android:id="@+id/editTextNumberDecimal2"
+                    android:id="@+id/editTextNumberDecimalYear"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -100,9 +102,10 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/resultQuadra"
+                android:id="@+id/resultStudy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
@@ -114,7 +117,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:id="@+id/buttonSubmitQuadra"
+            android:id="@+id/buttonSubmitStudy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
