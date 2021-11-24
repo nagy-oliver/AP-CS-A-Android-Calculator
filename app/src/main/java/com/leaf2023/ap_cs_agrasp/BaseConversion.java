@@ -21,7 +21,13 @@ public class BaseConversion extends AppCompatActivity {
         // Register listener
         findViewById(R.id.buttonSubmitBase).setOnClickListener(view -> {
             try {
-                  
+                  // Parse
+                  double num = Double.parseDouble((!numField.getText().toString().equals("") ? numField.getText().toString() : "0"));
+                  int fBase = Integer.parseInt((!fBaseField.getText().toString().equals("") ? fBaseField.getText().toString() : "0"));
+                  int tBase = Integer.parseInt((!tBaseField.getText().toString().equals("") ? tBaseField.getText().toString() : "0"));
+
+                  // Base conversion
+                  result.setText(Integer.toString(Integer.parseInt(String.valueOf(num), fBase), tBase));
             } catch (NumberFormatException x) {
                 result.setText("Please fill correct values");
             }
