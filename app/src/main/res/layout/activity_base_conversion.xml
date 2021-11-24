@@ -10,6 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +50,11 @@
 
                 <EditText
                     android:id="@+id/editTextNumberDecimalNum"
-                    android:layout_width="317dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number|numberDecimal" />
+                    android:inputType="number|numberDecimal"
+                    android:minWidth="200dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -66,15 +71,17 @@
 
                 <EditText
                     android:id="@+id/editTextNumberDecimalFromBase"
-                    android:layout_width="306dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:minWidth="200dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -86,10 +93,11 @@
 
                 <EditText
                     android:id="@+id/editTextNumberDecimalToBase"
-                    android:layout_width="306dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="number" />
+
             </LinearLayout>
 
             <TextView
