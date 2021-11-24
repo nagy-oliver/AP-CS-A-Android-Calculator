@@ -13,10 +13,10 @@ public class QuadraticEquation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quadratic_equation);
 
-        EditText atext = findViewById(R.id.editTextNumberDecimalTerm);
-        EditText btext = findViewById(R.id.editTextNumberDecimalYear);
+        EditText atext = findViewById(R.id.editTextNumberDecimalNum);
+        EditText btext = findViewById(R.id.editTextNumberDecimalFromBase);
         EditText ctext = findViewById(R.id.editTextNumberDecimal3);
-        TextView result = findViewById(R.id.resultStudy);
+        TextView result = findViewById(R.id.resultBase);
 
         // An example of an exception
         class QuadComputationException extends Exception {
@@ -26,7 +26,7 @@ public class QuadraticEquation extends AppCompatActivity {
         }
 
         // Register listener
-        findViewById(R.id.buttonSubmitStudy).setOnClickListener(view -> {
+        findViewById(R.id.buttonSubmitBase).setOnClickListener(view -> {
             try {
                 // Parse data from string input
                 double a = Double.parseDouble((!atext.getText().toString().equals("") ? atext.getText().toString() : "0"));
