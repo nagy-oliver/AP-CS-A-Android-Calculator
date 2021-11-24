@@ -22,7 +22,7 @@ public class BaseConversion extends AppCompatActivity {
         findViewById(R.id.buttonSubmitBase).setOnClickListener(view -> {
             try {
                   // Parse
-                  double num = Double.parseDouble((!numField.getText().toString().equals("") ? numField.getText().toString() : "0"));
+                  int num = Integer.parseInt((!numField.getText().toString().equals("") ? numField.getText().toString() : "0"));
                   int fBase = Integer.parseInt((!fBaseField.getText().toString().equals("") ? fBaseField.getText().toString() : "0"));
                   int tBase = Integer.parseInt((!tBaseField.getText().toString().equals("") ? tBaseField.getText().toString() : "0"));
 
