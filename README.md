@@ -1,4 +1,4 @@
-# AP-CS-A-Grasp
+# AP-CS-A-Android-Calculator
 
 An android application made in Android Studio, using Java programming language  
   
